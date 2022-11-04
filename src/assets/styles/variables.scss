@@ -1,0 +1,27 @@
+// Pallete
+$light: #EDF6F9;
+$dark: #252422;
+$yellow: #FADB5E;
+
+// Variables Colors Dark Theme
+$bg-dark: $dark;
+
+// Variables Colors Light Theme
+$bg-light: $light;
+
+// Medias
+$breakpoint-mobile: 456px;
+$breakpoint-tablet: 768px;
+$breakpoint-desktop: 1024px;
+
+@mixin tablet {
+    @media (min-width: #{$breakpoint-tablet}) and (max-width: #{$breakpoint-desktop}) {
+        @content;
+    }
+}
+
+@mixin desktop {
+    @media (min-width: #{$breakpoint-desktop}) {
+        @content;
+    }
+}

@@ -1,0 +1,17 @@
+@import './variables.scss';
+
+body {
+    background-color: $bg-dark;
+
+    .navbar .navbar__menu li a {
+        color: pink;
+    }
+
+    &.light-theme {
+        background-color: $bg-light;
+
+        .navbar .navbar__menu li a {
+            color: red;
+        }
+    }
+}

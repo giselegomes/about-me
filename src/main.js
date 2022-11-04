@@ -2,10 +2,18 @@ import { createApp } from 'vue'
 import App from './App.vue'
 import router from './router'
 
-import './assets/main.css'
+import './assets/styles/global.scss'
 
 const app = createApp(App)
 
 app.use(router)
 
 app.mount('#app')
+
+
+const switchTheme = document.getElementById('switch');
+
+switchTheme.addEventListener('click', function(){
+    const getBody = document.querySelector('body')
+    getBody.classList.toggle('light-theme')
+})
