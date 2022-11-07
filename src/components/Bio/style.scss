@@ -1,5 +1,4 @@
 @import '../../assets/styles/global.scss';
-@import '../../assets/styles/variables.scss';
 
 .bio {
     display: flex;
@@ -12,43 +11,106 @@
         flex-direction: row;
     }
 
-    &__avatar {
+    .avatar {
         display: flex;
         flex-direction: column;
         align-items: center;
 
-        &--img {
+        &__img {
             width: 300px;
             height: 300px;
-            border-radius: 50%;
+            border: 5px solid $white;
+
+            &--border {
+                width: 300px;
+                background-color: $white;
+                border: 5px solid $white;
+                font-family: 'Marck Script', cursive;
+                height: 30px;
+            }
         }
 
-        &--stars {
+        &__stars {
             width: 100px;
             margin-top: 10px;
             transform: rotate(180deg);
         }
     }
 
-    &__info {
-        max-width: 200px;
+    .info {
+        max-width: 80vw;
         border-left: 0;
-        padding: 1rem;
+        padding: 2rem 1rem 1rem 1rem;
+        text-align: center;
 
         @include desktop {
             border-bottom: 0;
+            max-width: 36vw;
+            text-align: initial;
         }
 
-        h1 {
-            font-family: 'Pacifico', cursive;
+        &__title {
+            font-family: 'Berkshire Swash', cursive;
             color: white;
             font-size: 2rem;
-            line-height: 32px;
-            letter-spacing: 2px;
+            line-height: 0;
+
+            @include desktop {
+                font-size: 3rem;
+            }
         }
 
+        &__list {
+            padding: 12px 0 0 12px;
+            font-size: 1.25rem;
+            display: flex;
+            flex-direction: column;
+            row-gap: 12px;
+
+            @include desktop {
+                padding: 12px 0 0 12px;
+            }
+
+            .list {
+                &__item {
+                    color: white;
+                    font-family: 'Montserrat Alternates', sans-serif;
+                    line-height: 32px;
+                }
+
+                &__emoji {
+                    width: 15px;
+                }
+            }
+        }
         p {
             font-family: 'Kanit', sans-serif;
+
+            &.open {
+                font-size: 2rem;
+                text-transform: uppercase;
+                color: #8ac926;
+                text-align: center;
+                animation: animate 
+                    1.5s linear infinite;
+                font-family: 'Stick No Bills', sans-serif;
+                text-shadow: 0 0 0.125em rgba(0, 0, 0, 0.5), 0 0 0.25em currentColor;
+            }
+
+            @keyframes animate {
+                0% {
+                    opacity: 0;
+                }
+      
+                50% {
+                    opacity: 0.7;
+                }
+      
+                100% {
+                    opacity: 0;
+                }
+            }
         }
+
     }
 }
