@@ -12,7 +12,7 @@
             </li>
         </ul>
         <div class="navbar__switch">
-            <input id="switch" class="switch switch--shadow" type="checkbox" />
+            <input id="switch" class="switch navbar__switch--shadow" type="checkbox" />
             <label for="switch"></label>
         </div>
     </nav>

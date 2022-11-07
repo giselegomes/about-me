@@ -1,4 +1,5 @@
 @import '../../assets/styles/global.scss';
+@import '../../assets/styles/variables.scss';
 
 .navbar {
     display: flex;
@@ -53,11 +54,11 @@
             }
         }
 
-        .switch--shadow + label {
+        .navbar__switch--shadow + label {
             padding: 2px;
             width: 46px;
             height: 24px;
-            background-color: #dddddd;
+            background-color: $gray;
             border-radius: 60px;
         
             &:before,
@@ -72,7 +73,7 @@
     
             &:before {
                 right: 1px;
-                background: radial-gradient(circle,#d5d5d5 0,#231942 100%);
+                background: radial-gradient(circle, $gray 0, $night-blue 100%);
                 border-radius: 60px;
                 transition: all 0.4s;
             }
@@ -87,11 +88,11 @@
             }
         } 
 
-        .switch--shadow:checked+label:before {
-            background: radial-gradient(circle,#ffffff 0,#a8ebfb 100%);
+        .navbar__switch--shadow:checked+label:before {
+            background: radial-gradient(circle, $white 0,$day-blue 100%);
         }
 
-        .switch--shadow:checked+label:after {
+        .navbar__switch--shadow:checked+label:after {
             transform: translateX(22px);
             background-image: url("../../assets/images/switch-sun.png");
         }
