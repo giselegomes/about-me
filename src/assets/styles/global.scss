@@ -4,14 +4,22 @@ body {
     background-color: $bg-dark;
 
     .navbar .navbar__menu li a {
-        color: pink;
+        color: $purple;
+
+        &:hover {
+            color: white;
+        }
     }
 
     &.light-theme {
         background-color: $bg-light;
 
         .navbar .navbar__menu li a {
-            color: red;
+            color: $purple;
+    
+            &:hover {
+                color: black;
+            }
         }
     }
 }
