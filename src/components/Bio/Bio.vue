@@ -26,9 +26,7 @@
             </ul>
         </div>
     </section>
-    <footer>
-        <img class="" src="./../../assets/images/arabesco.png" alt="" />
-    </footer>
+    
 </template>
 
 <style lang="scss" scoped>

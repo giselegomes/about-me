@@ -10,10 +10,10 @@
     column-gap: 14px;
 
     @include desktop {
-        margin: 0 42px;
         justify-content: end;
         column-gap: 52px;
-        margin-bottom: 62px;
+        padding: 1.5rem 3rem 0;
+        align-items: end;
     }
 
     &__menu {
@@ -42,6 +42,7 @@
     }
 
     &__switch {
+        margin-bottom: 4px;
         .switch {
             visibility: hidden;
 

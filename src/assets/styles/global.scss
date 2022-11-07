@@ -17,18 +17,22 @@ body {
             border: 5px solid $white;
             background-color: $white;
         }
-    }
 
-    .info {
-        &__title {
-            color: white;
+        .info {
+            &__title {
+                color: white;
+            }
+        }
+
+        .list {
+            &__item {
+                color: white;
+            }
         }
     }
 
-    .list {
-        &__item {
-            color: white;
-        }
+    .about {
+        background-color: $white;
     }
 
     &.light-theme {
@@ -42,22 +46,17 @@ body {
             }
         }
 
-        // .bio {
-        //     .avatar__img, .avatar__img--border {
-        //         border: 5px solid $purple;
-        //         background-color: $purple;
-        //     }
-        // }
-
-        .info {
-            &__title {
-                color: $dark;
+        .bio {
+            .info {
+                &__title {
+                    color: $dark;
+                }
             }
-        }
 
-        .list {
-            &__item {
-                color: $dark;
+            .list {
+                &__item {
+                    color: $dark;
+                }
             }
         }
     }

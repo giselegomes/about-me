@@ -2,7 +2,7 @@
 	<nav class="navbar">
         <ul class="navbar__menu">
             <li>    
-                <a href="/about-me">Sobre mim</a>
+                <a href="#about-me">Sobre mim</a>
             </li>
             <li>    
                 <a href="/skills">Skills</a>
