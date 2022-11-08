@@ -9,6 +9,7 @@
 
     @include desktop {
         flex-direction: row;
+        padding: 5rem 3rem;
     }
 
     .avatar {
@@ -70,7 +71,7 @@
 
             .list {
                 &__item {
-                    font-family: 'Montserrat Alternates', sans-serif;
+                    font-family: 'Artifika', serif;
                     line-height: 32px;
                 }
 

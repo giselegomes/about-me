@@ -1,6 +1,10 @@
 @import './variables.scss';
 @import './reset.scss';
 
+* {
+    scroll-behavior: smooth;
+}
+
 body {
     background-color: $bg-dark;
 
@@ -33,6 +37,10 @@ body {
 
     .about {
         background-color: $white;
+
+        &__title {
+            color: $purple;
+        }
     }
 
     &.light-theme {
@@ -57,6 +65,14 @@ body {
                 &__item {
                     color: $dark;
                 }
+            }
+        }
+
+        .about {
+            &__title {
+                font-size: 2rem;
+                font-family: 'Kurale', serif;
+                color: $dark;
             }
         }
     }
