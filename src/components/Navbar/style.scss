@@ -4,7 +4,7 @@
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-    margin-bottom: 32px;
+    margin: 22px 0 32px;
     column-gap: 14px;
     align-items: end;
 
@@ -12,6 +12,7 @@
         justify-content: end;
         column-gap: 52px;
         padding: 1.5rem 3rem 0;
+        margin: 0 0 32px;
     }
 
     &__menu {
@@ -40,7 +41,6 @@
     }
 
     &__switch {
-        margin-bottom: 4px;
         .switch {
             visibility: hidden;
 
@@ -92,7 +92,7 @@
         }
 
         .navbar__switch--shadow:checked+label:after {
-            transform: translateX(22px);
+            transform: translateX(18px);
             background-image: url("../../assets/images/switch-sun.png");
         }
     }  

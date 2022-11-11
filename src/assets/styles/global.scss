@@ -17,11 +17,7 @@ body {
     }
 
     .bio {
-        .avatar__img, .avatar__img--border {
-            border: 5px solid $white;
-            background-color: $white;
-        }
-
+        
         .info {
             &__title {
                 color: white;

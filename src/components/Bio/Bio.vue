@@ -1,26 +1,23 @@
 <template>
 	<section class="bio">
-        <div class="avatar">
-            <img class="avatar__img" src="https://github.com/giselegomes.png" alt="Avatar da Gisele" />
-            <span class="avatar__img--border"></span>
+        <div class="perfil">
+            <img class="perfil__img--open-to-work" src="../../assets/images/gisele-open-to-work.png" alt="perfil da Gisele" />
+            <img class="perfil__img" src="../../assets/images/gisele-open-to-work.png" alt="Avatar da Gisele" />
         </div>
         <div class="info">
             <h1 class="info__title">Olá, eu sou a Gisele!</h1>
+            <p class="open">Open to work!</p>
             <ul class="info__list list">
                 <li class="list__item">
-                    <img class="list__emoji" src="./../../assets/images/stars-item.png" alt="" />
                     Desenvolvedora Front-End
                 </li>
                 <li class="list__item">
-                    <img class="list__emoji" src="./../../assets/images/stars-item.png" alt="" />
                     Estudante de Análise e Desenvolvimento de Sistemas na UFPR
                 </li>
                 <li class="list__item">
-                    <img class="list__emoji" src="./../../assets/images/stars-item.png" alt="" />
                     Busco desenvolver aplicações responsivas e acessíveis
                 </li>
                 <li class="list__item">
-                    <img class="list__emoji" src="./../../assets/images/stars-item.png" alt="" />
                     Desenvolvedora Vue.js
                 </li>
             </ul>

@@ -12,19 +12,21 @@
         padding: 5rem 3rem;
     }
 
-    .avatar {
+    .perfil {
         display: flex;
         flex-direction: column;
         align-items: center;
 
-        &__img {
+        img {
             width: 300px;
             height: 300px;
+        }
 
-            &--border {
-                width: 300px;
-                font-family: 'Marck Script', cursive;
-                height: 30px;
+        &__img {
+            display: none;
+
+            &--open-to-work {
+                display: block;
             }
         }
 
@@ -52,6 +54,7 @@
             font-size: 2rem;
             line-height: 0;
             padding-bottom: 2rem;
+            white-space: nowrap;
 
             @include desktop {
                 font-size: 3rem;
@@ -92,22 +95,25 @@
                     1.5s linear infinite;
                 font-family: 'Stick No Bills', sans-serif;
                 text-shadow: 0 0 0.125em rgba(0, 0, 0, 0.5), 0 0 0.25em currentColor;
-            }
 
-            @keyframes animate {
-                0% {
-                    opacity: 0;
+                @include desktop {
+                    text-align: left;
                 }
-      
-                50% {
-                    opacity: 0.7;
-                }
-      
-                100% {
-                    opacity: 0;
+
+                @keyframes animate {
+                    0% {
+                        opacity: 0;
+                    }
+        
+                    50% {
+                        opacity: 0.7;
+                    }
+        
+                    100% {
+                        opacity: 0;
+                    }
                 }
             }
         }
-
     }
 }
