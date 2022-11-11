@@ -43,7 +43,7 @@ body {
         background-color: $bg-light;
 
         .navbar .navbar__menu li a {
-            color: $dark;
+            color: $black;
     
             &:hover {
                 color: #985277;
@@ -53,13 +53,13 @@ body {
         .bio {
             .info {
                 &__title {
-                    color: $dark;
+                    color: $black;
                 }
             }
 
             .list {
                 &__item {
-                    color: $dark;
+                    color: $black;
                 }
             }
         }
@@ -68,7 +68,7 @@ body {
             &__title {
                 font-size: 2rem;
                 font-family: 'Kurale', serif;
-                color: $dark;
+                color: $black;
             }
         }
     }
