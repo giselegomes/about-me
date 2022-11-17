@@ -5,10 +5,10 @@
                 <a href="#about">Sobre mim</a>
             </li>
             <li>    
-                <a href="/skills">Skills</a>
+                <a href="#skills">Skills</a>
             </li>
             <li>    
-                <a href="/projects">Projetos</a>
+                <a href="#projects">Projetos</a>
             </li>
         </ul>
         <div class="navbar__switch">

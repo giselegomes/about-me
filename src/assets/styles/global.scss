@@ -9,10 +9,10 @@ body {
     background-color: $bg-dark;
 
     .navbar .navbar__menu li a {
-        color: $purple;
+        color: $title-dark;
 
         &:hover {
-            color: white;
+            color: $white;
         }
     }
 
@@ -32,21 +32,21 @@ body {
     }
 
     .about {
-        background-color: $white;
+        background-color: $bg-global;
 
         &__title {
-            color: $purple;
+            color: $title-light;
         }
     }
 
     &.light-theme {
-        background-color: $bg-light;
+        background-color: $bg-global;
 
         .navbar .navbar__menu li a {
-            color: $black;
+            color: $title-light;
     
             &:hover {
-                color: #985277;
+                color: $text-light;
             }
         }
 
