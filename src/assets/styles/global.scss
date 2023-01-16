@@ -1,0 +1,75 @@
+@import './variables.scss';
+@import './reset.scss';
+
+* {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: $bg-dark;
+
+    .navbar .navbar__menu li a {
+        color: $title-dark;
+
+        &:hover {
+            color: $white;
+        }
+    }
+
+    .bio {
+        
+        .info {
+            &__title {
+                color: white;
+            }
+        }
+
+        .list {
+            &__item {
+                color: white;
+            }
+        }
+    }
+
+    .about {
+        background-color: $bg-global;
+
+        &__title {
+            color: $title-light;
+        }
+    }
+
+    &.light-theme {
+        background-color: $bg-global;
+
+        .navbar .navbar__menu li a {
+            color: $title-light;
+    
+            &:hover {
+                color: $text-light;
+            }
+        }
+
+        .bio {
+            .info {
+                &__title {
+                    color: $black;
+                }
+            }
+
+            .list {
+                &__item {
+                    color: $black;
+                }
+            }
+        }
+
+        .about {
+            &__title {
+                font-size: 2rem;
+                font-family: 'Kurale', serif;
+                color: $black;
+            }
+        }
+    }
+}

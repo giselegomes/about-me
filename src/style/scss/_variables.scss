@@ -1,0 +1,44 @@
+//fonts
+@import url('https://fonts.googleapis.com/css2?family=Artifika&family=Berkshire+Swash&family=Kanit:wght@100;200;300;400&family=Kurale&family=Marck+Script&family=Montserrat+Alternates:wght@300;400&family=Mukta:wght@300;500&family=Pacifico&family=Signika+Negative:wght@300;400;500&family=Stick+No+Bills:wght@300&display=swap');
+
+// Pallete
+$black: #191919;
+$gray: #423D3D;
+$light-gray: #DDDDDD;
+$white: #FFFFFF;
+$yellow: #FADB5E;
+$purple: #8C52FF;
+$light-purple: #D9D9D9;
+$night-blue: #231942;
+$day-blue: #A8EBFB;
+
+//variables
+$bg-global: $white;
+
+//variables for dark theme
+$bg-dark: $black;
+$text-dark: $white;
+$title-dark: $yellow;
+
+//variables for light theme
+$bg-light: $light-purple;
+$text-light: $light-gray;
+$title-light: $purple;
+
+
+// Medias
+$breakpoint-mobile: 456px;
+$breakpoint-tablet: 768px;
+$breakpoint-desktop: 1024px;
+
+@mixin tablet {
+    @media (min-width: #{$breakpoint-tablet}) and (max-width: #{$breakpoint-desktop}) {
+        @content;
+    }
+}
+
+@mixin desktop {
+    @media (min-width: #{$breakpoint-desktop}) {
+        @content;
+    }
+}
