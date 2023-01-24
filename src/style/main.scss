@@ -1,5 +1,4 @@
-@import './scss/variables.scss';
-
-body {
-    background-color: $black;
-}
+@import './scss/_reset.scss';
+@import './scss/_variables.scss';
+@import './scss/_global.scss';
+@import './scss/_navbar.scss';

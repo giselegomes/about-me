@@ -1,4 +1,114 @@
 @import url("https://fonts.googleapis.com/css2?family=Artifika&family=Berkshire+Swash&family=Kanit:wght@100;200;300;400&family=Kurale&family=Marck+Script&family=Montserrat+Alternates:wght@300;400&family=Mukta:wght@300;500&family=Pacifico&family=Signika+Negative:wght@300;400;500&family=Stick+No+Bills:wght@300&display=swap");
-body {
-  background-color: #191919;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+* {
+  scroll-behavior: smooth;
+}
+
+.navbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin: 22px 0 32px;
+  -moz-column-gap: 14px;
+       column-gap: 14px;
+  align-items: end;
+}
+@media (min-width: 1024px) {
+  .navbar {
+    justify-content: end;
+    -moz-column-gap: 52px;
+         column-gap: 52px;
+    padding: 1.5rem 3rem 0;
+    margin: 0 0 32px;
+  }
+}
+.navbar__menu {
+  display: flex;
+  -moz-column-gap: 14px;
+       column-gap: 14px;
+}
+@media (min-width: 1024px) {
+  .navbar__menu {
+    -moz-column-gap: 48px;
+         column-gap: 48px;
+  }
+}
+.navbar__menu li {
+  list-style: none;
+  font-family: "Kurale", serif;
+  font-weight: bolder;
+  font-size: 1.25rem;
+}
+@media (min-width: 1024px) {
+  .navbar__menu li {
+    -moz-column-gap: 48px;
+         column-gap: 48px;
+    font-size: 1.5rem;
+  }
+}
+.navbar__menu li a {
+  text-decoration: none;
+}
+.navbar__switch .switch {
+  visibility: hidden;
+}
+.navbar__switch .switch + label {
+  display: block;
+  position: relative;
+  cursor: pointer;
+  outline: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+.navbar__switch .navbar__switch--shadow + label {
+  padding: 2px;
+  width: 46px;
+  height: 28px;
+  background-color: #FFFFFF;
+  border-radius: 60px;
+}
+.navbar__switch .navbar__switch--shadow + label:before, .navbar__switch .navbar__switch--shadow + label:after {
+  display: block;
+  position: absolute;
+  top: 1px;
+  left: 1px;
+  bottom: 1px;
+  content: "";
+}
+.navbar__switch .navbar__switch--shadow + label:before {
+  right: 1px;
+  background: radial-gradient(circle, #423D3D 0, #231942 100%);
+  border-radius: 60px;
+  transition: all 0.4s;
+}
+.navbar__switch .navbar__switch--shadow + label:after {
+  width: 26px;
+  border-radius: 100%;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  transition: all 0.4s;
+  background-image: url("../assets/images/switch-moon.png");
+  background-repeat: no-repeat;
+}
+.navbar__switch .navbar__switch--shadow:checked + label:before {
+  background: radial-gradient(circle, #FFFFFF 0, #A8EBFB 100%);
+}
+.navbar__switch .navbar__switch--shadow:checked + label:after {
+  transform: translateX(18px);
+  background-image: url("../assets/images/switch-sun.png");
 }/*# sourceMappingURL=main.css.map */
