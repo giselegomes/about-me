@@ -18,6 +18,20 @@ a {
   scroll-behavior: smooth;
 }
 
+body {
+  background-color: #191919;
+}
+body .navbar li a {
+  color: #FADB5E;
+}
+
+body.light-theme {
+  background-color: #D9D9D9;
+}
+body.light-theme .navbar li a {
+  color: #8C52FF;
+}
+
 .navbar {
   display: flex;
   flex-direction: row;

@@ -1,0 +1,9 @@
+body {
+    &.light-theme {
+        background-color: $bg-light;
+
+        .navbar li a {
+            color: $title-light;
+        }
+    }
+}
